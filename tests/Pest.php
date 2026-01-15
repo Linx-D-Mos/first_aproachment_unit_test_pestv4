@@ -11,10 +11,16 @@
 |
 */
 
+use Tests\TestCase;
+
 pest()->extend(Tests\TestCase::class)
- // ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
+    ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
     ->in('Feature');
 
+   uses()
+    ->group('routes')
+    ->in('Feature/Routes');
+    
 /*
 |--------------------------------------------------------------------------
 | Expectations
