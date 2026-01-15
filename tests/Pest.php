@@ -19,7 +19,7 @@ pest()->extend(Tests\TestCase::class)
 
    uses()
     ->group('routes')
-    ->in('Feature/Routes');
+    ->in('Feature/Ey');
     
 /*
 |--------------------------------------------------------------------------
